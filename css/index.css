@@ -1,0 +1,295 @@
+*{
+    margin: 0;  padding: 0;
+}
+a{
+    text-decoration: none;
+}
+/*菜单*/
+body{
+    position: relative;
+    /*background-color: #e8e8e8;*/
+}
+#my-menu{
+    z-index: 100;
+    position: fixed;
+    left: 2%;
+}
+#my-menu .menu{
+    background: #ffffff;
+    width: 19%;
+    float: left;
+    height: 100%;
+}
+#my-menu .menu .gif0{
+    text-align: center;
+}
+#my-menu .menu img{
+    width: 200px;
+    margin-bottom: 140px;
+
+}
+#my-menu .menu-content ul{
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+#my-menu .menu-content a > b{
+    font-weight: normal;
+    font-size: 14px;
+    display: block;
+    height: 21px;
+    color: #999;
+    /*font-family: Microsoft JhengHei;*/
+}
+#my-menu .menu-content a > p{
+    height: 18px;
+    color: #333333;
+}
+#menu-logo{
+    float: left;
+    display: none;
+    cursor: pointer;
+}
+
+
+#container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 81%;
+}
+
+/*轮播图 welcome*/
+#welcome{
+    position: relative;
+}
+#imgs img{
+    width: 100%;
+    display: none;
+}
+#imgs .selected{
+    display: block;
+}
+#nav{
+    position: absolute;
+    right: 49.5%;
+    margin-right: -50px;
+    bottom: 46px;
+    z-index: 1;
+    cursor: pointer;
+}
+#prev{
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    font-size: 40px;
+    color: #999;
+    z-index: 1;
+    margin-top: -10px;
+    cursor: pointer;
+}
+#next{
+    font-size: 40px;
+    color: #999;
+    z-index: 1;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    margin-top: -10px;
+    cursor: pointer;
+}
+#nav li{
+    width: 13px;
+    height: 13px;
+    display: block;
+    float: left;
+    margin-right: 18px;
+    border-radius: 50%;
+    background-color: #505755;
+}
+#nav .selected{
+    background: #03c0ff;
+}
+
+#welcome .text-inner{
+    z-index: 1;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    color: #fefefe;
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 1.3;
+    font-family: "Josefin Slab", Arial, serif;
+}
+#welcome .generalize-content {
+    width: 300px;
+    float: left;
+    margin-top: 200px;
+
+}
+#welcome-read-more{
+    width: 100%;
+    position: absolute;
+    bottom: 100px;
+}
+#read-more{
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    width: 170px;
+    height: 50px;
+    background-color: #03c0ff;
+    margin: 0 auto;
+}
+
+/*右侧导航*/
+#right-nav{
+    z-index: 1;
+    position: fixed;
+    right: 8px;
+    top:50%;
+    margin-top: -75px;
+    width: 30px;
+    height: 150px;
+    /*background-color: blue;*/
+}
+#right-nav ul{
+    list-style: none;
+
+}
+#right-nav ul li{
+    display: block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 20px;
+    background-color: #999999;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*项目展示*/
+
+/*项目展示与能力范围公共部分*/
+#project,#ability{
+    width: 100%;
+    background-color: #f5f4f4;
+    display: table;
+}
+
+#project-container,#ability-container{
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 60px;
+    /*background-color: blue;*/
+}
+
+#project .project-title,#ability .ability-title{
+    width: 100%;
+    height: 110px;
+    /*background-color: red;*/
+}
+
+#project .project-left,#ability .ability-left{
+    float: left;
+}
+#project .project-left .case-top,#ability .ability-left .case-top{
+    display: block;
+    font-size: 24px;
+    font-weight: normal;
+    color: #333333;
+}
+#project .project-left .case-bottom,#ability .ability-left .case-bottom{
+    display: block;
+    color: #a8a8a8;
+    font-size: 15px;
+}
+#project .project-right,#ability .ability-right{
+    float: right;
+}
+#project .project-right div,#ability .ability-right div{
+    width: 48px;
+    height: 48px;
+    float: left;
+    background-color: #fff;
+    margin-right:1px;
+}
+#project .project-right .span1,#project .project-right .span2,#ability .ability-right .span1,#ability .ability-right .span2{
+    display: block;
+    width: 0;
+    margin-top: 10px;
+    border-width: 14px;
+    border-style: solid;
+    border-color: #ffffff;
+    cursor: pointer;
+}
+#project .project-right .span1,#ability .ability-right .span1{
+    border-right-color: #999999;
+}
+#project .project-right .span2,#ability .ability-right .span2{
+    border-left-color: #999999;
+    margin-left: 20px;
+}
+/*图片及图片描述部分*/
+#project-list  .project-img{
+    float: left;
+}
+#project-list img{
+    display: block;
+    width: 214px;
+    height: 208px;
+}
+#project-list .img-discription{
+    width: 214px;
+    height: 208px;
+    background-color: #fff;
+}
+
+/*能力范围*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1400px) {
+    #my-menu{
+        background-color: #fff;
+    }
+    #my-menu .menu{
+        display: none;
+        position: fixed;
+        z-index: 1;
+    }
+    #my-menu .menu-logo{
+        z-index: 1;
+        position: fixed;
+        float: left;
+        display: block;
+    }
+    #container{
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -3,9 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="js/index.js">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-    <h1>hahhaaha</h1>
+<!--菜单-->
+<div id="my-menu">
+    <div class="menu">
+        <div class="gif0"><img src="imgs/1485616729.gif" alt=""></div>
 
+        <div class="menu-content">
+            <ul>
+                <a href="" class="welcome-home"><b>欢迎</b><p>HOME</p></a>
+            </ul>
+            <ul>
+                <a href=""><b>项目展示</b><p>PROJECT</p></a>
+            </ul>
+            <ul>
+                <a href=""><b>能力范围</b><p>ABILITY</p></a>
+            </ul>
+            <ul>
+                <a href=""><b>关于我</b><p>ABOUT ME</p></a>
+            </ul>
+            <ul>
+                <a href=""><b>联系我</b><p>CONTACT</p></a>
+            </ul>
+        </div>
+    </div>
+    <div id="menu-logo">
+        <img src="imgs/menu_icon.svg" alt="">
+    </div>
+</div>
+
+<!--右侧导航-->
+<div id="right-nav">
+    <ul>
+        <a href="#welcome"><li></li></a>
+        <a href="#project"><li></li></a>
+        <a href="#ability"><li></li></a>
+        <a href=""><li></li></a>
+        <a href=""><li></li></a>
+    </ul>
+</div>
+
+<div id="container">
+    <!--welcome-->
+    <div id="welcome">
+        <div id="welcome-read-more"><div id="read-more">READ MORE</div></div>
+        <div id="imgs">
+            <img src="imgs/scroll-1.jpg" alt="" class="selected">
+            <img src="imgs/scroll-2.jpg" alt="">
+            <img src="imgs/scroll-3.jpg" alt="">
+        </div>
+        <ul id="nav">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <span id="prev">&lt;</span>
+        <span id="next">&gt;</span>
+        <div class="text-inner">
+            <h1>Welocom&nbsp;To&nbsp;My&nbsp;Home&nbsp;！</h1>
+            <h2>Do&nbsp;You&nbsp;Like&nbsp;Me&nbsp;?</h2>
+        </div>
+        <div id="get-more"></div>
+    </div>
+
+    <!--项目展示-->
+    <div id="project">
+
+        <div id="project-container">
+
+            <div class="project-title">
+                    <div class="project-left">
+                        <span class="case-top">项目</span>
+                        <span class="case-bottom">PROJECT</span>
+                    </div>
+                    <div class="project-right">
+                        <div><span class="span1"></span></div>
+                        <div><span class="span2"></span></div>
+                    </div>
+            </div>
+
+            <div id="project-list">
+                <span></span>
+                <div class="project-img">
+                    <img src="imgs/example-1.png" alt=""><div class="img-discription"></div></div>
+                <div class="project-img">
+                    <div class="img-discription"></div><img src="imgs/example-2.png" alt=""></div>
+                <div class="project-img">
+                    <img src="imgs/example-3.png" alt=""><div class="img-discription"></div></div>
+                <div class="project-img">
+                    <div class="img-discription"></div><img src="imgs/example-4.png" alt=""></div>
+                <div class="project-img">
+                    <img src="imgs/example-5.png" alt=""><div class="img-discription"></div></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--能力范围-->
+    <div id="ability">
+        <div id="ability-container">
+
+            <div class="ability-title">
+                <div class="ability-left">
+                    <span class="case-top">能力范围</span>
+                    <span class="case-bottom">ABILITY</span>
+                </div>
+                <div class="ability-right">
+                    <div><span class="span1"></span></div>
+                    <div><span class="span2"></span></div>
+                </div>
+            </div>
+
+            <div id="ability-list">
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+<script src="jquerymoblie/jquery-1.11.2.js"></script>
+<script>
+
+    $("#imgs img").css("height",window.innerHeight);
+    $("#my-menu .menu").css("height",window.innerHeight);
+    $("#project").css("height",window.innerHeight);
+    $("#ability").css("height",window.innerHeight);
+    $("#project-container").css("height",window.innerHeight/1.3);
+    $("#ability-container").css("height",window.innerHeight/1.3);
+
+//菜单
+    if(window.innerWidth < 1400+"px"){
+        var menuMenu = $("#my-menu");
+        menuMenu.hover(function () {
+            $(".menu").css("display","block")
+        },function () {
+            $(".menu").css("display","none")
+        });
+    };
+
+
+
+
+</script>
 </body>
 </html>
