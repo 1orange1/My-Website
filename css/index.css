@@ -59,6 +59,35 @@ body{
     width: 81%;
 }
 
+
+
+/*右侧导航*/
+#right-nav{
+    z-index: 1;
+    position: fixed;
+    right: 8px;
+    top:50%;
+    margin-top: -75px;
+    width: 30px;
+    height: 150px;
+    /*background-color: blue;*/
+}
+#right-nav ul{
+    list-style: none;
+
+}
+#right-nav ul li{
+    display: block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 20px;
+    background-color: #999999;
+}
+
+
+
+
 /*轮播图 welcome*/
 #welcome{
     position: relative;
@@ -142,39 +171,6 @@ body{
     background-color: #03c0ff;
     margin: 0 auto;
 }
-
-/*右侧导航*/
-#right-nav{
-    z-index: 1;
-    position: fixed;
-    right: 8px;
-    top:50%;
-    margin-top: -75px;
-    width: 30px;
-    height: 150px;
-    /*background-color: blue;*/
-}
-#right-nav ul{
-    list-style: none;
-
-}
-#right-nav ul li{
-    display: block;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin-bottom: 20px;
-    background-color: #999999;
-}
-
-
-
-
-
-
-
-
-
 
 
 /*项目展示*/
