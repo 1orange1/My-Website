@@ -1,6 +1,38 @@
 /**
  * Created by wuzhi on 2017/10/19.
  */
+//welcome轮播图
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $(function(){
     $("#right-nav a").on("click", function(){
         var id = $(this).attr("href");

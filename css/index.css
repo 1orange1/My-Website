@@ -80,7 +80,7 @@ body{
 }
 #prev{
     position: absolute;
-    left: 40px;
+    left: 60px;
     top: 50%;
     font-size: 40px;
     color: #999;
@@ -93,7 +93,7 @@ body{
     color: #999;
     z-index: 1;
     position: absolute;
-    right: 40px;
+    right: 60px;
     top: 50%;
     margin-top: -10px;
     cursor: pointer;
