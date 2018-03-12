@@ -1,8 +1,4 @@
-/**
- * Created by wuzhi on 2017/10/19.
- */
 //welcome轮播图
-
 
 
 

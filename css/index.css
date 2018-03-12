@@ -251,10 +251,26 @@ body{
 }
 
 /*能力范围*/
-
-
-
-
+#ability .list{
+    width: 22.5%;
+    height: 400px;
+    background-color: #fbf8fc;
+    float: left;
+    margin-right: 2.5%;
+}
+#ability .list .ability-icon{
+    margin: 0 auto;
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: #000 solid;
+    text-align: center;
+    line-height: 186px;
+}
+#ability .list .ability-icon i{
+    margin: 0 auto;
+}
 
 
 
@@ -278,8 +294,8 @@ body{
         position: fixed;
         z-index: 1;
     }
-    #my-menu .menu-logo{
-        z-index: 1;
+    #my-menu #menu-logo{
+        z-index: 100;
         position: fixed;
         float: left;
         display: block;
