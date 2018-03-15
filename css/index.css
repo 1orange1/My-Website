@@ -12,25 +12,65 @@ body{
     /*background-color: #e8e8e8;*/
 }
 #my-menu{
-    width: 245px;
+    width: 19%;
     position: fixed;
-    padding-left: 2%;
-    background: -webkit-linear-gradient(top,white,#b0dae7,white);
+    background: -webkit-linear-gradient(top,white,#c8e5ee,white);
 
 
 }
-#my-menu .menu .gif0{
-    text-align: center;
+
+#my-menu .menu-clock{
+    height: 290px;
 }
-#my-menu .menu img{
-    width: 200px;
+#clock li{
+    width: 1px;
+    height: 4px;
+    background: #000000;
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    left: 130px;
+    transform-origin: 0 80px;
     margin-bottom: 140px;
-
 }
+#clock li:nth-child(5n+1){
+    height: 9px;
+}
+#hour{
+    width: 3px;
+    height: 40px;
+    background: #000000;
+    position: absolute;
+    top: 90px;
+    left: 128px;
+    transform-origin: bottom;
+}
+#minute{
+    width: 2px;
+    height: 60px;
+    background: #999;
+    position: absolute;
+    left: 128px;
+    top: 70px;
+    transform-origin: bottom;
+}
+#second{
+    width: 1px;
+    height: 70px;
+    background: #ff0000;
+    position: absolute;
+    left: 129px;
+    top: 60px;
+    transform-origin: bottom;
+}
+
+
+
 #my-menu .menu-content ul{
     width: 200px;
-    margin: 0 auto;
+    padding-left: 19%;
     margin-top: 18px;
+
 }
 #my-menu .menu-content a > b{
     font-weight: normal;
@@ -44,11 +84,7 @@ body{
     height: 18px;
     color: #333333;
 }
-#menu-logo{
-    float: left;
-    display: none;
-    cursor: pointer;
-}
+
 #container{
     position: absolute;
     top: 0;
@@ -175,6 +211,7 @@ body{
 #project,#ability{
     width: 100%;
     background-color: #f5f4f4;
+    background-color: #f1f8fa;
     display: table;
 }
 
