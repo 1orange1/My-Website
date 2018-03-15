@@ -4,9 +4,7 @@
 a{
     text-decoration: none;
 }
-#container{
-    float: left;
-}
+
 
 /*菜单*/
 body{
@@ -14,15 +12,12 @@ body{
     /*background-color: #e8e8e8;*/
 }
 #my-menu{
-    z-index: 100;
+    width: 245px;
     position: fixed;
-    left: 2%;
-}
-#my-menu .menu{
-    background: #ffffff;
-    width: 19%;
-    float: left;
-    height: 100%;
+    padding-left: 2%;
+    background: -webkit-linear-gradient(top,white,#b0dae7,white);
+
+
 }
 #my-menu .menu .gif0{
     text-align: center;

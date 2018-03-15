@@ -31,7 +31,7 @@
 				fallTimeMultiplier	: 20,
 				fallTimeDifference 	: 10000,
 				spawnInterval		: 500,
-				target				: $('div'),
+				target				: $('html'),
 				elements			: [
 					{
 						html: '<i class="fa fa-snowflake-o" aria-hidden="true"></i>',
