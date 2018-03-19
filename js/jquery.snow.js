@@ -27,7 +27,7 @@
 		
 		var defaults = {
 				minSize				: 14,
-				maxSize				: 32,
+				maxSize				: 30,
 				fallTimeMultiplier	: 20,
 				fallTimeDifference 	: 10000,
 				spawnInterval		: 500,

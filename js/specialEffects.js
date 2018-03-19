@@ -1,4 +1,4 @@
-
+// 钟表
  (function(){
             var oClock = document.getElementById("clock");
             var oHour = document.getElementById("hour");

@@ -6,8 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700" rel="stylesheet">-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">-->
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -49,21 +49,20 @@
             </ul>
         </div>
     </div>
-
-    <!--<div id="menu-logo">-->
-        <!--<img src="imgs/menu_icon.svg" alt="">-->
-    <!--</div>-->
 </div>
 
 
 <div  id="container">
     <!--welcome-->
     <div id="welcome">
+        <div id="menu-logo">
+            <img src="imgs/menu_icon.svg" alt="">
+        </div>
         <div id="welcome-read-more"><div id="read-more">READ MORE</div></div>
         <div id="imgs">
-            <img src="imgs/1.jpg" alt="" class="selected">
-            <img src="imgs/2.jpg" alt="">
-            <img src="imgs/3.jpg" alt="">
+            <img src="imgs/a.jpg" alt="" class="selected">
+            <img src="imgs/s.jpg" alt="">
+            <img src="imgs/d.jpg" alt="">
         </div>
         <ul id="nav">
             <li class="selected"></li>
@@ -74,8 +73,7 @@
         <span id="next">&gt;</span>
         <div class="text-inner">
             <h1>Welocom&nbsp;To&nbsp;My&nbsp;Home&nbsp;！</h1>
-            <h2>Do&nbsp;You&nbsp;Like&nbsp;Me&nbsp;?</h2>
-
+            <h2>一个热爱旅行，喜欢魔术，经常画画的女程序员。</h2>
         </div>
     </div>
 
@@ -156,9 +154,38 @@
         </div>
     </div>
 
-    <!--联系我-->
-    <div class="contact-me">
+    <!--关于我-->
+    <div id="about-me">
+        <div class="about-img"><img src="imgs/me.jpg" alt=""></div>
+        <div class="introduction-me">
+            <p class="about-me">关于我</p>
+            <p class="Eabout-me">ABOUT&nbsp;ME</p>
+            <div class="introduction-myself">
+            黑龙江大学数据科学与技术学院 2015 级网络工程专业学生,有扎实的编程功底，
+            以及敏感的互联网思维，极强的学习能力, 熟悉网络编辑工作流程，对基本的办公事宜有所了解。
+            本人个性开朗，容易相处，有责任感，团队荣誉感强。 本人动手能力极强，对硬件方面动手能力非常强
+            </div>
+        </div>
+    </div>
 
+    <!--联系我-->
+    <div id="contact-me">
+        <p class="about-me">联系我</p>
+        <p class="Eabout-me">CONTACT</p>
+        <form action="">
+            <input type="text" name="name" placeholder="姓名">
+            <input type="tel" name="telephone" placeholder="电话">
+            <input type="email" name="email" placeholder="Email"><br/>
+            <textarea name="textarea" id="" cols="74" rows="8" placeholder="留言内容"></textarea><br>
+            <button type="submit">提交信息</button>
+        </form>
+        <div class="my-message">
+            <i class="fa fa-circle-thin" aria-hidden="true"></i><p>地址：黑龙江省哈尔滨市学府路74号</p>
+            <i class="fa fa-circle-thin" aria-hidden="true"></i><p>手机：18845029464</p>
+            <i class="fa fa-circle-thin" aria-hidden="true"></i><p>邮箱：yangyang88827@163.com</p>
+            <i class="fa fa-circle-thin" aria-hidden="true"></i><p>电话：13258572277</p>
+            <i class="fa fa-circle-thin" aria-hidden="true"></i><p>邮编：150000</p>
+        </div>
     </div>
 
     <!--右侧导航-->
@@ -167,14 +194,14 @@
             <a class="go-welcome"><li></li></a>
             <a class="go-project"><li></li></a>
             <a class="go-ability"><li></li></a>
-            <a class=""><li></li></a>
-            <a class=""><li></li></a>
+            <a class="go-aboutme"><li></li></a>
+            <a class="go-contact"><li></li></a>
         </ul>
     </div>
 
     <!--回到顶部-->
     <div id="goTop">
-        回到</br>顶部
+        <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
     </div>
 
 </div>
@@ -192,8 +219,12 @@
     $(".menu").css("height",window.innerHeight);
     $("#project").css("height",window.innerHeight);
     $("#ability").css("height",window.innerHeight);
+    $("#about-me").css("height",window.innerHeight);
+    $("#contact-me").css("height",window.innerHeight);
     $("#project-container").css("height",window.innerHeight/1.3);
     $("#ability-container").css("height",window.innerHeight/1.3);
+    $(".introduction-me").css("margin-top",window.innerHeight/7);
+    $(".about-me").css("margin-top",window.innerHeight/7);
 
 //菜单
     if(window.innerWidth < 1400+"px"){

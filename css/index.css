@@ -12,11 +12,16 @@ body{
     /*background-color: #e8e8e8;*/
 }
 #my-menu{
-    width: 19%;
+    width: 18.8%;
     position: fixed;
-    background: -webkit-linear-gradient(top,white,#c8e5ee,white);
+    background: -webkit-linear-gradient(top,#f4bc88,white);
 
 
+
+}
+#my-menu .menu{
+    -moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
+    box-shadow: 3px 0px 0px #e3e3e3;
 }
 
 #my-menu .menu-clock{
@@ -86,6 +91,7 @@ body{
 }
 
 #container{
+    /*background-color: #f5f4f4;*/
     position: absolute;
     top: 0;
     right: 0;
@@ -143,14 +149,14 @@ body{
     position: absolute;
     left: 60px;
     top: 50%;
-    font-size: 40px;
+    font-size: 10px;
     color: #999;
     z-index: 1;
     margin-top: -10px;
     cursor: pointer;
 }
 #next{
-    font-size: 40px;
+    font-size: 10px;
     color: #999;
     z-index: 1;
     position: absolute;
@@ -210,7 +216,6 @@ body{
 /*项目展示与能力范围公共部分*/
 #project,#ability{
     width: 100%;
-    background-color: #f5f4f4;
     background-color: #f1f8fa;
     display: table;
 }
@@ -310,6 +315,81 @@ body{
 
 }
 
+/*关于我*/
+#about-me{
+    display: table;
+}
+#about-me .about-img{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 88px;
+}
+#about-me .introduction-me{
+    padding: 60px;
+    color: #8a8a8a;
+}
+#about-me .about-me,#contact-me .about-me{
+    color: #343434;
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+#about-me .Eabout-me,#contact-me .Eabout-me{
+    color: #d4d4d4;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+#about-me .introduction-myself{
+    padding-top: 44px;
+    border-top: solid #dddddd 2px;
+}
+
+
+
+/*联系我*/
+#contact-me{
+    padding:0 5%;
+    /*background-color: red;*/
+    overflow: hidden;
+}
+#contact-me form{
+    float: left;
+}
+#contact-me input{
+    font-size: 16px;
+    outline: none;
+    width: 200px;
+    height: 50px;
+    border:none;
+    border-bottom: solid #757575 1px;
+
+}
+#contact-me textarea{
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: solid #757575 1px;
+}
+#contact-me .my-message{
+    font-size: 17px;
+    /*background-color: blue;*/
+    margin-bottom: 36px;
+    color: #757575;
+    width: 38%;
+    float: right;
+}
+#contact-me .my-message p{
+    margin-top: 18px;
+}
+#contact-me .my-message i{
+    float: left;
+    margin-top: 22px;
+    margin-right: 10px;
+}
+
+
+
+
 
 
 
@@ -320,6 +400,9 @@ body{
     bottom:20px;
     right:20px;
     cursor: pointer;
+}
+#goTop i{
+    font-size: 35px;
 }
 
 

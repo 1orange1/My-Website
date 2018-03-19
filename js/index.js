@@ -37,7 +37,7 @@ $(function () {
     function play(){
         timer = setInterval(function(){
             $("#next").trigger("click");
-        }, 1000);
+        }, 1500);
     }
     function changeImg(){
         $lis.eq(nowIndex).addClass("selected").siblings().removeClass("selected");
@@ -50,15 +50,20 @@ $(function () {
 
 //右侧导航
 $(".go-welcome").on("click",function () {
-    $("html,body").stop().animate({scrollTop:$("#welcome").offset().top-74},1000);
+    $("html,body").stop().animate({scrollTop:$("#welcome").offset().top-72},1000);
 });
 $(".go-project").on("click",function () {
-    $("html,body").stop().animate({scrollTop:$("#project").offset().top-74},1000);
+    $("html,body").stop().animate({scrollTop:$("#project").offset().top-72},1000);
 });
 $(".go-ability").on("click",function () {
-    $("html,body").stop().animate({scrollTop:$("#ability").offset().top-74},1000);
+    $("html,body").stop().animate({scrollTop:$("#ability").offset().top-72},1000);
 });
-
+$(".go-aboutme").on("click",function () {
+    $("html,body").stop().animate({scrollTop:$("#about-me").offset().top-72},1000);
+});
+$(".go-contact").on("click",function () {
+    $("html,body").stop().animate({scrollTop:$("#contact-me").offset().top-72},1000);
+});
 
 
 
@@ -93,20 +98,3 @@ oGoTop.on('click',function () {
 
 
 
-$(function(){
-    $("#right-nav a").on("click", function(){
-        var id = $(this).attr("href");
-        var top = $(id).offset().top;
-        $(document.body).animate({
-            scrollTop: top
-        });
-
-        history.pushState(top, "");
-        return false;
-    });
-    window.onpopstate = function(e){
-        $(document.body).animate({
-            scrollTop: e.state
-        });
-    };
-});
