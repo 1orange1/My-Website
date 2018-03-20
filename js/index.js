@@ -28,11 +28,6 @@ $(function () {
     });
     play();
 
-    $("#welcome").hover(function(){
-        clearInterval(timer);
-    }, function(){
-        play();
-    });
 
     function play(){
         timer = setInterval(function(){
@@ -44,8 +39,6 @@ $(function () {
         $("#imgs img").eq(nowIndex).addClass("selected").siblings().removeClass("selected");
     }
 });
-
-
 
 
 //右侧导航
@@ -94,6 +87,15 @@ oGoTop.on('click',function () {
     }, 30);
 });
 
+//左侧菜单小图标
+
+var omyMenu = document.getElementById("my-menu");
+var ocontainer = document.getElementById("container");
+var omenuLogo = document.getElementById("menu-logo");
+omenuLogo.onclick =function () {
+    omyMenu.style.width = "18.8%";
+    ocontainer.style.width = "81%";
+};
 
 
 

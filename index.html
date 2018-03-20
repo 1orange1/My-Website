@@ -6,8 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="css/index.css">
-    <!--<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700" rel="stylesheet">-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/auto.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -74,6 +75,18 @@
         <div class="text-inner">
             <h1>Welocom&nbsp;To&nbsp;My&nbsp;Home&nbsp;！</h1>
             <h2>一个热爱旅行，喜欢魔术，经常画画的女程序员。</h2>
+        </div>
+    </div>
+
+    <!--关于我-->
+    <div id="about-me">
+        <div class="about-img"><img src="imgs/me.jpg" alt=""></div>
+        <div class="introduction-me">
+            <p class="about-me">李茗洋</p>
+            <p class="Eabout-me">ABOUT&nbsp;ME</p>
+            <div class="introduction-myself">
+                黑龙江大学数据科学与技术学院 2015 级网络工程专业学生,学习前端一年半，有扎实的编程功底，
+            </div>
         </div>
     </div>
 
@@ -154,20 +167,6 @@
         </div>
     </div>
 
-    <!--关于我-->
-    <div id="about-me">
-        <div class="about-img"><img src="imgs/me.jpg" alt=""></div>
-        <div class="introduction-me">
-            <p class="about-me">关于我</p>
-            <p class="Eabout-me">ABOUT&nbsp;ME</p>
-            <div class="introduction-myself">
-            黑龙江大学数据科学与技术学院 2015 级网络工程专业学生,有扎实的编程功底，
-            以及敏感的互联网思维，极强的学习能力, 熟悉网络编辑工作流程，对基本的办公事宜有所了解。
-            本人个性开朗，容易相处，有责任感，团队荣誉感强。 本人动手能力极强，对硬件方面动手能力非常强
-            </div>
-        </div>
-    </div>
-
     <!--联系我-->
     <div id="contact-me">
         <p class="about-me">联系我</p>
@@ -227,7 +226,7 @@
     $(".about-me").css("margin-top",window.innerHeight/7);
 
 //菜单
-    if(window.innerWidth < 1400+"px"){
+    if(window.innerWidth < 980+"px"){
         var menuMenu = $("#my-menu");
         menuMenu.hover(function () {
             $(".menu").css("display","block")
