@@ -87,14 +87,21 @@ oGoTop.on('click',function () {
     }, 30);
 });
 
+
 //左侧菜单小图标
 
 var omyMenu = document.getElementById("my-menu");
 var ocontainer = document.getElementById("container");
 var omenuLogo = document.getElementById("menu-logo");
+var omenu = document.getElementById("menu");
+
 omenuLogo.onclick =function () {
-    omyMenu.style.width = "18.8%";
-    ocontainer.style.width = "81%";
+    if(omyMenu.style.width == 0){
+        omenu.style.display = "block";
+        omyMenu.style.width = "18.8%";
+        ocontainer.style.width = "81%";
+    }
+
 };
 
 

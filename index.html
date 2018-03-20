@@ -18,7 +18,7 @@
 
 <!--菜单-->
 <div id="my-menu">
-    <div class="menu">
+    <div id="menu">
         <div class="menu-clock">
             <ul id="clock">
                 <!-- <li></li>
@@ -74,7 +74,7 @@
         <span id="next">&gt;</span>
         <div class="text-inner">
             <h1>Welocom&nbsp;To&nbsp;My&nbsp;Home&nbsp;！</h1>
-            <h2>一个热爱旅行，喜欢魔术，经常画画的女程序员。</h2>
+            <h2></h2>
         </div>
     </div>
 
@@ -215,7 +215,7 @@
 
     $("#imgs img").css("height",window.innerHeight);
     $("html").css("height",window.innerHeight);
-    $(".menu").css("height",window.innerHeight);
+    $("#menu").css("height",window.innerHeight);
     $("#project").css("height",window.innerHeight);
     $("#ability").css("height",window.innerHeight);
     $("#about-me").css("height",window.innerHeight);
@@ -236,6 +236,7 @@
     };
 
 
+//飘雪花
     var snowEffectInterval = jQuery.fn.snow({
         // min size of element (default: 20)
         minSize: 8,
