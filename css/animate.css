@@ -1,0 +1,25 @@
+
+
+
+/*菜单*/
+#my-menu{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+
+}
+
+#container {
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+/*提交*/
+#contact-me button{
+    background-color: #f4bc88;
+    transition: background-color 0.3s linear;
+}
+#contact-me button:hover{
+    background-color: #2a2a2a;
+}

@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/auto.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -57,12 +57,12 @@
     <!--welcome-->
     <div id="welcome">
         <div id="menu-logo">
-            <img src="imgs/menu_icon.svg" alt="">
+            <img src="imgs/menu_icon.svg" alt="" style="height: 46px;width: 46px">
         </div>
         <div id="welcome-read-more"><div id="read-more">READ MORE</div></div>
         <div id="imgs">
             <img src="imgs/a.jpg" alt="" class="selected">
-            <img src="imgs/s.jpg" alt="">
+            <img src="imgs/f.jpg" alt="">
             <img src="imgs/d.jpg" alt="">
         </div>
         <ul id="nav">
@@ -80,13 +80,61 @@
 
     <!--关于我-->
     <div id="about-me">
-        <div class="about-img"><img src="imgs/me.jpg" alt=""></div>
+        <div class="about-img"><img src="imgs/mine.jpg" alt="" style="width: 440px;height: 580px"></div>
         <div class="introduction-me">
             <p class="about-me">李茗洋</p>
             <p class="Eabout-me">ABOUT&nbsp;ME</p>
             <div class="introduction-myself">
-                黑龙江大学数据科学与技术学院 2015 级网络工程专业学生,学习前端一年半，有扎实的编程功底，
+                黑龙江大学数据科学与技术学院 2015 级网络工程专业学生,学习前端一年半，有扎实的编程功底，能熟练的操作电脑，
+                对webpack,vue,ES6等框架有一定的了解及掌握，并能在实践中加以运用；
+                有良好的语言表达能力，学习和适应能力强，能坦然面对工作中的压力和挑战。<br>
+                在校期间积极参加学校和院系的各类活动，如艺术节、运动会等，曾在学生会纪检部任职，负责学生上课出勤。
+                同时本人爱好阅读、音乐及美术，有一定的文艺鉴赏能力。
             </div>
+        </div>
+    </div>
+
+    <!--能力范围-->
+    <div id="ability">
+        <div id="ability-container">
+
+            <div class="ability-title">
+                <div class="ability-left">
+                    <span class="case-top">能力范围</span>
+                    <span class="case-bottom">ABILITY</span>
+                </div>
+                <div class="ability-right">
+                    <div><span class="span1"></span></div>
+                    <div><span class="span2"></span></div>
+                </div>
+            </div>
+
+            <div id="ability-list">
+                <div class="list">
+                    <!--旋转fa-rotate-270-->
+                    <div class="ability-icon"><i class="fa fa-html5 fa-4x " aria-hidden="true" ></i></div>
+                    <div class="ability-description">&nbsp;&nbsp;缺少前端工程师?
+                        本人精通原生Js可进行组件开发，也擅长使用各种前端框架进行工程性开发。</div>
+
+                </div>
+
+                <div class="list">
+                    <div class="ability-icon"><i class="fa fa-pencil fa-4x" aria-hidden="true"></i></div>
+                    <div class="ability-description">&nbsp;&nbsp;人手不够？
+                        我可以顶上。但坦白讲，我觉得自己的配色没有专业的人那么好。</div>
+                </div>
+
+                <div class="list">
+                    <div class="ability-icon"><i class="fa fa-desktop fa-4x" aria-hidden="true"></i></div>
+                    <div class="ability-description">&nbsp;&nbsp;有大致的方向没有具体思路？让我来好了，我喜欢通过各种资源的整合运用，创造出有生命力的新产品。</div>
+                </div>
+
+                <div class="list">
+                    <div class="ability-icon"><i class="fa fa-html5 fa-4x" aria-hidden="true"></i></div>
+                    <div class="ability-description">&nbsp;&nbsp;有大致的方向没有具体思路？让我来好了，我喜欢通过各种资源的整合运用，创造出有生命力的新产品。</div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -123,50 +171,6 @@
         </div>
     </div>
 
-    <!--能力范围-->
-    <div id="ability">
-        <div id="ability-container">
-
-            <div class="ability-title">
-                <div class="ability-left">
-                    <span class="case-top">能力范围</span>
-                    <span class="case-bottom">ABILITY</span>
-                </div>
-                <div class="ability-right">
-                    <div><span class="span1"></span></div>
-                    <div><span class="span2"></span></div>
-                </div>
-            </div>
-
-            <div id="ability-list">
-                <div class="list">
-                    <!--旋转fa-rotate-270-->
-                    <div class="ability-icon"><i class="fa fa-html5 fa-4x " aria-hidden="true" ></i></div>
-                        <div class="ability-description">&nbsp;&nbsp;缺少前端工程师?
-                            本人精通原生Js可进行组件开发，也擅长使用各种前端框架进行工程性开发。</div>
-
-                </div>
-
-                <div class="list">
-                    <div class="ability-icon"><i class="fa fa-pencil fa-4x" aria-hidden="true"></i></div>
-                    <div class="ability-description">&nbsp;&nbsp;人手不够？
-                        我可以顶上。但坦白讲，我觉得自己的配色没有专业的人那么好。</div>
-                </div>
-
-                <div class="list">
-                    <div class="ability-icon"><i class="fa fa-desktop fa-4x" aria-hidden="true"></i></div>
-                    <div class="ability-description">&nbsp;&nbsp;有大致的方向没有具体思路？让我来好了，我喜欢通过各种资源的整合运用，创造出有生命力的新产品。</div>
-                </div>
-
-                <div class="list">
-                    <div class="ability-icon"><i class="fa fa-html5 fa-4x" aria-hidden="true"></i></div>
-                    <div class="ability-description">&nbsp;&nbsp;有大致的方向没有具体思路？让我来好了，我喜欢通过各种资源的整合运用，创造出有生命力的新产品。</div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
     <!--联系我-->
     <div id="contact-me">
         <p class="about-me">联系我</p>
@@ -191,9 +195,9 @@
     <div id="right-nav">
         <ul>
             <a class="go-welcome"><li></li></a>
-            <a class="go-project"><li></li></a>
-            <a class="go-ability"><li></li></a>
             <a class="go-aboutme"><li></li></a>
+            <a class="go-ability"><li></li></a>
+            <a class="go-project"><li></li></a>
             <a class="go-contact"><li></li></a>
         </ul>
     </div>
@@ -203,6 +207,10 @@
         <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
     </div>
 
+    <div style="background-color:#000;color: #fff">
+        ©2017 李茗洋 
+        黑ICP备17008320号
+    </div>
 </div>
 
 <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>

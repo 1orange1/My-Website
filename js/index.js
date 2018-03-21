@@ -43,26 +43,20 @@ $(function () {
 
 //右侧导航
 $(".go-welcome").on("click",function () {
-    $("html,body").stop().animate({scrollTop:$("#welcome").offset().top-72},1000);
+    $("html,body").stop().animate({scrollTop:$("#welcome").offset().top},1000);
 });
 $(".go-project").on("click",function () {
-    $("html,body").stop().animate({scrollTop:$("#project").offset().top-72},1000);
+    $("html,body").stop().animate({scrollTop:$("#project").offset().top},1000);
 });
 $(".go-ability").on("click",function () {
-    $("html,body").stop().animate({scrollTop:$("#ability").offset().top-72},1000);
+    $("html,body").stop().animate({scrollTop:$("#ability").offset().top},1000);
 });
 $(".go-aboutme").on("click",function () {
-    $("html,body").stop().animate({scrollTop:$("#about-me").offset().top-72},1000);
+    $("html,body").stop().animate({scrollTop:$("#about-me").offset().top},1000);
 });
 $(".go-contact").on("click",function () {
-    $("html,body").stop().animate({scrollTop:$("#contact-me").offset().top-72},1000);
+    $("html,body").stop().animate({scrollTop:$("#contact-me").offset().top},1000);
 });
-
-
-
-
-
-
 
 
 
@@ -76,6 +70,7 @@ $(".go-contact").on("click",function () {
 
 
 //回到顶部
+
 var oGoTop = $("#goTop");
 oGoTop.on('click',function () {
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -90,20 +85,22 @@ oGoTop.on('click',function () {
 
 //左侧菜单小图标
 
-var omyMenu = document.getElementById("my-menu");
-var ocontainer = document.getElementById("container");
-var omenuLogo = document.getElementById("menu-logo");
+var oMyMenu = document.getElementById("my-menu");
+var oContainer = document.getElementById("container");
+var oMenuLogo = document.getElementById("menu-logo");
 var omenu = document.getElementById("menu");
 
-omenuLogo.onclick =function () {
-    if(omyMenu.style.width == "" || omyMenu.style.width == "0px"){
+oMenuLogo.onclick =function () {
+    if(oMyMenu.style.width == "" || oMyMenu.style.width == "0px"){
         // omenu.style.display = "block";
         //console.log(omyMenu.style);
-        omyMenu.style.width = "18.8%";
-        ocontainer.style.width = "81%";
+        oMyMenu.style.width = "18.8%";
+        oContainer.style.width = "81%";
+        // document.getElementById("divP").src="2.png";
+
     }else{
-        omyMenu.style.width = 0;
-        ocontainer.style.width = "100%";
+        oMyMenu.style.width = 0;
+        oContainer.style.width = "100%";
         // omenu.style.display = "none";
     }
 
