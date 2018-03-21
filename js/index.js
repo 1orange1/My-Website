@@ -96,10 +96,15 @@ var omenuLogo = document.getElementById("menu-logo");
 var omenu = document.getElementById("menu");
 
 omenuLogo.onclick =function () {
-    if(omyMenu.style.width == 0){
-        omenu.style.display = "block";
+    if(omyMenu.style.width == "" || omyMenu.style.width == "0px"){
+        // omenu.style.display = "block";
+        //console.log(omyMenu.style);
         omyMenu.style.width = "18.8%";
         ocontainer.style.width = "81%";
+    }else{
+        omyMenu.style.width = 0;
+        ocontainer.style.width = "100%";
+        // omenu.style.display = "none";
     }
 
 };

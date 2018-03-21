@@ -21,7 +21,7 @@ body{
 
 }
 #my-menu #menu{
-    display: none;
+    /*display: none;*/
     -moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
     box-shadow: 3px 0px 0px #e3e3e3;
 }
@@ -332,6 +332,7 @@ body{
 /*关于我*/
 #about-me{
     display: table;
+    background-color: #fff;
 }
 #about-me .about-img{
     display: table-cell;
@@ -364,6 +365,7 @@ body{
     padding:0 5%;
     /*background-color: red;*/
     overflow: hidden;
+    background-color: #fff;
 }
 #contact-me form{
     float: left;
