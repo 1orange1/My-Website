@@ -18,13 +18,14 @@ body{
 
 }
 #my-menu #menu{
-    /*display: none;*/
+    overflow: hidden;
     -moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
     box-shadow: 3px 0px 0px #e3e3e3;
 }
 /*时钟*/
 #my-menu .menu-clock{
     height: 290px;
+    overflow: inherit;
 }
 #clock li{
     width: 1px;
@@ -367,13 +368,14 @@ body{
 #contact-me input{
     font-size: 16px;
     outline: none;
-    width: 200px;
+    width:32%;
     height: 50px;
     border:none;
     border-bottom: solid #757575 1px;
 
 }
 #contact-me textarea{
+    width: 97%;
     margin-top: 30px;
     border: none;
     outline: none;

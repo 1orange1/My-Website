@@ -1,4 +1,4 @@
-/*@media (max-width: 1400px) {*/
+/*@media (max-width: 345px) {*/
     /*#my-menu .menu{*/
         /*display: none;*/
         /*position: fixed;*/
@@ -9,3 +9,12 @@
         /*height: 100%;*/
     /*}*/
 /*}*/
+@media (max-width: 1347px){
+    #contact-me .my-message{
+        float: none;
+        overflow: auto;
+    }
+    #contact-me form{
+        float: none;
+    }
+}
