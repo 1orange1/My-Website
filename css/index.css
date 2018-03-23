@@ -72,11 +72,16 @@ body{
 
 
 #my-menu .menu-content ul{
-    width: 200px;
+    padding: 9px 0;
     padding-left: 19%;
-    margin-top: 18px;
+    cursor: pointer;
 
 }
+#my-menu .menu-content ul:hover{
+    background-color: #04c0ff;
+    transition: all 1s;
+}
+
 #my-menu .menu-content a > b{
     font-weight: normal;
     font-size: 14px;
@@ -138,7 +143,6 @@ body{
 
 }
 
-
 #imgs img{
     width: 100%;
     display: none;
@@ -183,9 +187,9 @@ body{
     border-radius: 50%;
     background-color: #505755;
 }
-#nav .selected{
-    background: #03c0ff;
-}
+/*#nav .selected{*/
+    /*background: #03c0ff;*/
+/*}*/
 
 #welcome .text-inner{
     z-index: 1;
@@ -277,23 +281,46 @@ body{
 }
 #project .project-right .span1,#ability .ability-right .span1{
     border-right-color: #999999;
+    display: none;
 }
 #project .project-right .span2,#ability .ability-right .span2{
     border-left-color: #999999;
     margin-left: 20px;
+    display: none;
 }
 /*图片及图片描述部分*/
+#project-content{
+    overflow: hidden;
+    height: 416px;
+}
 #project-list  .project-img{
     float: left;
+    padding: 5px;
+    margin: 8px;
+    background-color: #fff;
 }
 #project-list img{
+    margin: 0 auto;
     display: block;
-    width: 214px;
-    height: 208px;
+    width: 400px;
+    height: 400px;
+
+}
+#project-list img:hover{
+    width: 428px;
+    height: 428px;
+    transition: all 1s;
+}
+#project-list .project-img{
+    width: 428px;
+    height: 428px;
+    overflow: hidden;
 }
 #project-list .img-discription{
-    width: 214px;
-    height: 208px;
+    width: 400px;
+    /*height: 200px;*/
+    height: 0;
+    overflow: hidden;
     background-color: #fff;
 }
 

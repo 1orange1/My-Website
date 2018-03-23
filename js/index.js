@@ -41,25 +41,77 @@ $(function () {
 });
 
 
+var aProjectImg = $(".project-img");
+
+$(".span1").on("click",function () {
+    var nowIndex = 0;
+    for(i=0;i<=aProjectImg.length;i++){
+
+    }
+});
+$("#jnImageroll div a").on("mouseover", function(){
+    $(this).addClass("chos").siblings().removeClass("chos");
+    $("#JS_imgWrap img").eq($(this).index()).stop().fadeIn().siblings().stop().fadeOut();
+});
+
+
+//轮播图
+$(".project-right span").on("click", function(){
+    $(this).addClass("chos").siblings().removeClass("chos");
+    $("#project-list").stop().animate({
+        left: -$(".project-img").innerWidth() * 1 * $(this).index()
+    }, 1000);
+});
+
+
+
+
+
+
+
+
+
+
+
+
 //右侧导航
 $(".go-welcome").on("click",function () {
+    $(".go-welcome").addClass("menu-selected").siblings().removeClass("menu-selected");
     $("html,body").stop().animate({scrollTop:$("#welcome").offset().top},1000);
 });
-$(".go-project").on("click",function () {
-    $("html,body").stop().animate({scrollTop:$("#project").offset().top},1000);
+$(".go-aboutme").on("click",function () {
+    $("html,body").stop().animate({scrollTop:$("#about-me").offset().top},1000);
 });
 $(".go-ability").on("click",function () {
     $("html,body").stop().animate({scrollTop:$("#ability").offset().top},1000);
 });
-$(".go-aboutme").on("click",function () {
-    $("html,body").stop().animate({scrollTop:$("#about-me").offset().top},1000);
+$(".go-project").on("click",function () {
+    $("html,body").stop().animate({scrollTop:$("#project").offset().top},1000);
 });
 $(".go-contact").on("click",function () {
     $("html,body").stop().animate({scrollTop:$("#contact-me").offset().top},1000);
 });
 
-
-
+$(".menu1").on("click",function () {
+    $(".menu1").addClass("menu-left-selected").siblings().removeClass("menu-left-selected");
+    $("html,body").stop().animate({scrollTop:$("#welcome").offset().top},1000);
+});
+$(".menu2").on("click",function () {
+    $(".menu2").addClass("menu-left-selected").siblings().removeClass("menu-left-selected");
+    $("html,body").stop().animate({scrollTop:$("#about-me").offset().top},1000);
+});
+$(".menu3").on("click",function () {
+    $(".menu3").addClass("menu-left-selected").siblings().removeClass("menu-left-selected");
+    $("html,body").stop().animate({scrollTop:$("#ability").offset().top},1000);
+});
+$(".menu4").on("click",function () {
+    $(".menu4").addClass("menu-left-selected").siblings().removeClass("menu-left-selected");
+    $("html,body").stop().animate({scrollTop:$("#project").offset().top},1000);
+});
+// $(".menu5").on("click",function () {
+//     $(".menu5").addClass("menu-left-selected").siblings().removeClass("menu-left-selected");
+//     $("html,body").stop().animate({scrollTop:$("#contact-me").offset().top},1000);
+// });
 
 
 

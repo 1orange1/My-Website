@@ -23,3 +23,26 @@ function run(){
     oHour.style.transform = "rotate("+ nowHour * 30 +"deg)";
 }
 })();
+
+
+ //
+$("body").on("touchstart", function(e) {
+
+    e.preventDefault();
+    startY = e.originalEvent.changedTouches[0].pageY;
+});
+var t = $(window).scrollTop();
+$("body").on("touchmove", function(e) {
+    e.preventDefault();
+    moveEndY = e.originalEvent.changedTouches[0].pageY, Y = moveEndY - startY;
+
+   if ( Y > 0) {
+       $('body,html').animate({'scrollTop':t+window.innerHeight},100);
+    }
+    else if ( Y < 0 ) {
+        alert("bottom 2 top");
+    }
+    else{
+        alert("just touch");
+    }
+});

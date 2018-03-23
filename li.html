@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="li.css">
+</head>
+<body>
+<div id="jnBrand">
+    <div id="jnBrandTab">
+        <ul>
+            <li class="chos"><a title="运动" href="#nogo">运动</a></li>
+            <li><a title="女鞋" href="#nogo">女鞋</a></li>
+            <li><a title="男鞋" href="#nogo">男鞋</a></li>
+            <li><a title="Applife" href="#nogo">童鞋</a></li>
+        </ul>
+    </div>
+    <div id="jnBrandContent">
+        <div id="jnBrandList">
+            <ul>
+                <li>
+                    <a href="###1" class="JS_live"><img alt="耐克" src="imgs/a.jpg" /></a>
+                    <span><a href="###1">耐克</a></span>
+                </li>
+                <li>
+                    <a href="###2" class="JS_live"><img alt="阿迪达斯" src="imgs/s.jpg" /></a>
+                    <span><a href="###2">阿迪达斯</a></span>
+                </li>
+                <li>
+                    <a href="###3" class="JS_live"><img alt="李宁" src="imgs/d.jpg" /></a>
+                    <span><a href="###3">李宁</a></span>
+                </li>
+                <li>
+                    <a href="###4" class="JS_live"><img alt="安踏" src="imgs/f.jpg" /></a>
+                    <span><a href="###4">安踏</a></span>
+                </li>
+                <li>
+                    <a href="###1" class="JS_live"><img alt="耐克" src="imgs/a.jpg" /></a>
+                    <span><a href="###1">耐克</a></span>
+                </li>
+                <li>
+                    <a href="###2" class="JS_live"><img alt="阿迪达斯" src="imgs/s.jpg" /></a>
+                    <span><a href="###2">阿迪达斯</a></span>
+                </li>
+                <li>
+                    <a href="###3" class="JS_live"><img alt="李宁" src="imgs/d.jpg" /></a>
+                    <span><a href="###3">李宁</a></span>
+                </li>
+                <li>
+                    <a href="###4" class="JS_live"><img alt="安踏" src="imgs/f.jpg" /></a>
+                    <span><a href="###4">安踏</a></span>
+                </li>
+                <li>
+                    <a href="###1" class="JS_live"><img alt="耐克" src="imgs/a.jpg" /></a>
+                    <span><a href="###1">耐克</a></span>
+                </li>
+                <li>
+                    <a href="###2" class="JS_live"><img alt="阿迪达斯" src="imgs/s.jpg" /></a>
+                    <span><a href="###2">阿迪达斯</a></span>
+                </li>
+                <li>
+                    <a href="###3" class="JS_live"><img alt="李宁" src="imgs/d.jpg" /></a>
+                    <span><a href="###3">李宁</a></span>
+                </li>
+                <li>
+                    <a href="###4" class="JS_live"><img alt="安踏" src="imgs/f.jpg" /></a>
+                    <span><a href="###4">安踏</a></span>
+                </li>
+                <li>
+                    <a href="###1" class="JS_live"><img alt="耐克" src="imgs/a.jpg" /></a>
+                    <span><a href="###1">耐克</a></span>
+                </li>
+                <li>
+                    <a href="###2" class="JS_live"><img alt="阿迪达斯" src="imgs/s.jpg" /></a>
+                    <span><a href="###2">阿迪达斯</a></span>
+                </li>
+                <li>
+                    <a href="###3" class="JS_live"><img alt="李宁" src="imgs/d.jpg" /></a>
+                    <span><a href="###3">李宁</a></span>
+                </li>
+                <li>
+                    <a href="###4" class="JS_live"><img alt="安踏" src="imgs/f.jpg" /></a>
+                    <span><a href="###4">安踏</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script>
+    function tooltip(selector){
+        $(selector).hover(function(e){
+            this.tempTitle = $(this).attr("title") ? $(this).attr("title") : $(this).html();
+            $("<div id='tooltip'></div>").html(this.tempTitle).offset({
+                top: e.pageY + 10,
+                left: e.pageX + 10
+            }).appendTo("body").show("fast");
+            $(this).removeAttr("title");
+        }, function(){
+            $("#tooltip").remove();
+            $(this).attr("title", this.tempTitle);
+        }).on("mousemove", function(e){
+            $("#tooltip").offset({
+                top: e.pageY + 10,
+                left: e.pageX + 10
+            });
+        });
+    }
+    $(function(){
+
+        //轮播图
+        //调整图片的层级关系:z-index
+        /* $("#JS_imgWrap img").each(function(index, elem){
+         $(elem).css({
+         zIndex: 5 - index
+         });
+         });*/
+        $("#jnImageroll div a").on("mouseover", function(){
+            $(this).addClass("chos").siblings().removeClass("chos");
+            $("#JS_imgWrap img").eq($(this).index()).stop().fadeIn().siblings().stop().fadeOut();
+        });
+
+        //tooltip
+
+        //轮播图
+        $("#jnBrandTab li").on("click", function(){
+            $(this).addClass("chos").siblings().removeClass("chos");
+            $("#jnBrandList").stop().animate({
+                left: -$("#jnBrandList li").innerWidth() * 4 * $(this).index()
+            }, 1000);
+        });
+
+
+
+    });
+
+</script>
+</body>
+</html>

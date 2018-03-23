@@ -18,3 +18,8 @@
         float: none;
     }
 }
+@media (max-width: 1160px){
+    #my-menu{
+
+    }
+}
