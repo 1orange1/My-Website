@@ -187,9 +187,9 @@ body{
     border-radius: 50%;
     background-color: #505755;
 }
-/*#nav .selected{*/
-    /*background: #03c0ff;*/
-/*}*/
+#nav .selected{
+    background: #03c0ff;
+}
 
 #welcome .text-inner{
     z-index: 1;
@@ -226,28 +226,92 @@ body{
 
 /*项目展示*/
 
+.gallery{
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+.gallery-container{
+    overflow: hidden;
+    width: 100%;
+}
+.gallery-top h3,.welcome-top h3,.team-top h3{
+    width: 17%;
+    text-align: center;
+}
+.gallery-top{
+    margin-bottom: 3%;
+}
+.da-thumbs {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.da-thumbs li {
+    float: left;
+    margin: 0.4%;
+    background: #EFEFEF;
+    padding: 8px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(231, 231, 231, 0.43);
+    width: 25%;
+}
+.da-thumbs li a, .da-thumbs li a img {
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
+.da-thumbs li a {
+    overflow: hidden;
+}
+.da-thumbs li a div {
+    position: absolute;
+    background: rgba(25, 6, 8, 0.9);
+    width: 100%;
+    height: 100%;
+}
+.da-thumbs li a div span {
+    display: block;
+    padding: 10px 0;
+    margin: 11px 20px 20px 20px;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: rgba(255,255,255,0.9);
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Raleway-Regular';
+}
+.da-thumbs li a div  h5 {
+    color: #FFF;
+    font-size: 1.5em;
+    margin: 2em 0 0 0;
+    font-family: 'Audiowide-Regular';
+    text-align: center;
+}
 /*项目展示与能力范围公共部分*/
 #project,#ability{
     width: 100%;
-    background-color: #f1f8fa;
-    display: table;
-}
+    background-color: #fdf1e7;
 
+}
+#project{
+    background-color: #fff;
+}
 #project-container,#ability-container{
     width: 92%;
     margin: 0 auto;
-    margin-top: 60px;
+    padding-top: 60px;
     /*background-color: blue;*/
 }
 
 #project .project-title,#ability .ability-title{
-    width: 100%;
     height: 110px;
     /*background-color: red;*/
-}
-
-#project .project-left,#ability .ability-left{
-    float: left;
 }
 #project .project-left .case-top,#ability .ability-left .case-top{
     display: block;
@@ -260,78 +324,18 @@ body{
     color: #a8a8a8;
     font-size: 15px;
 }
-#project .project-right,#ability .ability-right{
-    float: right;
-}
-#project .project-right div,#ability .ability-right div{
-    width: 48px;
-    height: 48px;
-    float: left;
-    background-color: #fff;
-    margin-right:1px;
-}
-#project .project-right .span1,#project .project-right .span2,#ability .ability-right .span1,#ability .ability-right .span2{
-    display: block;
-    width: 0;
-    margin-top: 10px;
-    border-width: 14px;
-    border-style: solid;
-    border-color: #ffffff;
-    cursor: pointer;
-}
-#project .project-right .span1,#ability .ability-right .span1{
-    border-right-color: #999999;
-    display: none;
-}
-#project .project-right .span2,#ability .ability-right .span2{
-    border-left-color: #999999;
-    margin-left: 20px;
-    display: none;
-}
-/*图片及图片描述部分*/
-#project-content{
-    overflow: hidden;
-    height: 416px;
-}
-#project-list  .project-img{
-    float: left;
-    padding: 5px;
-    margin: 8px;
-    background-color: #fff;
-}
-#project-list img{
-    margin: 0 auto;
-    display: block;
-    width: 400px;
-    height: 400px;
-
-}
-#project-list img:hover{
-    width: 428px;
-    height: 428px;
-    transition: all 1s;
-}
-#project-list .project-img{
-    width: 428px;
-    height: 428px;
-    overflow: hidden;
-}
-#project-list .img-discription{
-    width: 400px;
-    /*height: 200px;*/
-    height: 0;
-    overflow: hidden;
-    background-color: #fff;
-}
 
 /*能力范围*/
+#ability-list{
+    overflow: hidden;
+}
 #ability .list{
     width: 22.5%;
     height: 400px;
     /*background-color: #fbf8fc;*/
     float: left;
     margin-right: 2.5%;
-    border-bottom: #000000 solid 2px;
+    /*border-bottom: #000000 solid 2px;*/
 }
 #ability .list .ability-icon{
     margin: 0 auto;
@@ -353,17 +357,23 @@ body{
 
 /*关于我*/
 #about-me{
-    display: table;
+    overflow: hidden;
     background-color: #fff;
+    display: table;
 }
 #about-me .about-img{
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 88px;
+    width: 50%;
+    float: left;
+}
+#about-me .about-img img{
+    width: 86%;
 }
 #about-me .introduction-me{
-    padding: 60px;
-    color: #8a8a8a;
+    width: 50%;
+    float: right;
+    vertical-align: middle;
+    display: table-cell;
+
 }
 #about-me .about-me,#contact-me .about-me{
     color: #343434;
@@ -373,9 +383,10 @@ body{
 #about-me .Eabout-me,#contact-me .Eabout-me{
     color: #d4d4d4;
     font-size: 18px;
-    margin-bottom: 40px;
 }
 #about-me .introduction-myself{
+    font-size: 20px;
+    width: 80%;
     padding-top: 44px;
     border-top: solid #dddddd 2px;
 }
@@ -384,10 +395,10 @@ body{
 
 /*联系我*/
 #contact-me{
-    padding:0 5%;
+    padding: 5% 50px 5%;
     /*background-color: red;*/
     overflow: hidden;
-    background-color: #fff;
+    background-color: #fdf1e7;
 }
 #contact-me form{
     float: left;
@@ -399,6 +410,7 @@ body{
     height: 50px;
     border:none;
     border-bottom: solid #757575 1px;
+    background-color: #fdf1e7;
 
 }
 #contact-me textarea{
@@ -408,17 +420,19 @@ body{
     outline: none;
     font-size: 16px;
     border-bottom: solid #757575 1px;
+    background-color: #fdf1e7;
 }
 #contact-me .my-message{
     font-size: 17px;
     /*background-color: blue;*/
     margin-bottom: 36px;
     color: #757575;
-    width: 38%;
+    width: 50%;
     float: right;
+
 }
 #contact-me .my-message p{
-    margin-top: 18px;
+    padding-top: 18px;
 }
 #contact-me .my-message i{
     float: left;

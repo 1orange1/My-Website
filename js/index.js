@@ -145,11 +145,8 @@ var omenu = document.getElementById("menu");
 oMenuLogo.onclick =function () {
     if(oMyMenu.style.width == "" || oMyMenu.style.width == "0px"){
         omenu.style.overflow = "visible";
-        //console.log(omyMenu.style);
         oMyMenu.style.width = "18.8%";
         oContainer.style.width = "81%";
-        // document.getElementById("divP").src="2.png";
-
     }else{
         oMyMenu.style.width = 0;
         oContainer.style.width = "100%";
